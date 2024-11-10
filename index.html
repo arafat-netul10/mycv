@@ -5,56 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arafat Islam Netul - Curriculum Vitae</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
+        /* Reset margin and padding */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+
         .container {
-            width: 80%;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 40px auto;
             background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
             overflow: hidden;
         }
-        .header, .section {
-            padding: 20px;
-        }
+
+        /* Header section */
         .header {
             background: #4c86af;
             color: #fff;
             text-align: center;
+            padding: 30px 20px;
+            border-bottom: 5px solid #34586e;
         }
+
         .header img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px;
         }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Section styling */
+        .section {
+            padding: 25px;
+        }
+
         .section-title {
-            background: #4c86af;
-            color: #fff;
-            padding: 10px;
-            margin: 0 -20px 20px;
+            font-size: 1.5rem;
+            color: #4c86af;
+            border-left: 5px solid #4c86af;
+            padding-left: 15px;
+            margin-bottom: 15px;
         }
+
         .section ul {
-            list-style: none;
-            padding: 0;
+            list-style-type: none;
+            padding-left: 0;
         }
+
         .section ul li {
-            padding: 10px;
+            padding: 10px 0;
             border-bottom: 1px solid #ddd;
         }
+
         .section ul li:last-child {
             border-bottom: none;
         }
+
         .footer {
             background: #4c86af;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Button styling */
+        .header .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #f0f0f0;
+            color: #4c86af;
+            border: 2px solid #4c86af;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header .contact-btn:hover {
+            background: #4c86af;
+            color: #fff;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.6rem;
+            }
+
+            .header img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
         }
     </style>
 </head>
@@ -65,8 +131,8 @@
         <img src="AN10.jpg" alt="Arafat Islam Netul">
         <h1>Arafat Islam Netul</h1>
         <p>Block-D, Road-6, House-4, Mirpur-1, Dhaka-1216</p>
-        <p>Mobile: 01729441668</p>
-        <p>Email: netul15-4924@diu.edu.bd</p>
+        <p>Mobile: 01729441668 | Email: netul15-4924@diu.edu.bd</p>
+        <a href="mailto:netul15-4924@diu.edu.bd" class="contact-btn">Contact Me</a>
     </div>
 
     <div class="section">
@@ -77,17 +143,17 @@
     <div class="section">
         <h2 class="section-title">Education</h2>
         <ul>
-            <li>BSc. 3rd Year in CSE at Daffodil International University (DIU).</li>
-            <li>HSC: GPA 4.83, BCIC College, 2020.</li>
-            <li>SSC: GPA 4.89, Dhaka Shiksha Board Laboratory School and College, 2018.</li>
+            <li><strong>BSc. 3rd Year in CSE</strong> at Daffodil International University (DIU)</li>
+            <li><strong>HSC:</strong> GPA 4.83, BCIC College, 2020</li>
+            <li><strong>SSC:</strong> GPA 4.89, Dhaka Shiksha Board Laboratory School and College, 2018</li>
         </ul>
     </div>
 
     <div class="section">
         <h2 class="section-title">Skills</h2>
         <ul>
-            <li>C, Java, Python programming languages.</li>
-            <li>Graphics Designing.</li>
+            <li>Programming Languages: C, Java, Python</li>
+            <li>Graphics Designing</li>
         </ul>
     </div>
 
@@ -104,24 +170,24 @@
     <div class="section">
         <h2 class="section-title">Personal Details</h2>
         <ul>
-            <li>Name: Arafat Islam Netul</li>
-            <li>Father’s Name: Md. Shafiqul Islam</li>
-            <li>Mother’s Name: Nasima Begum</li>
-            <li>Date of Birth: 26 March, 2003</li>
-            <li>Nationality: Bangladeshi</li>
-            <li>Religion: Islam</li>
-            <li>Gender: Male</li>
+            <li><strong>Name:</strong> Arafat Islam Netul</li>
+            <li><strong>Father’s Name:</strong> Md. Shafiqul Islam</li>
+            <li><strong>Mother’s Name:</strong> Nasima Begum</li>
+            <li><strong>Date of Birth:</strong> 26 March, 2003</li>
+            <li><strong>Nationality:</strong> Bangladeshi</li>
+            <li><strong>Religion:</strong> Islam</li>
+            <li><strong>Gender:</strong> Male</li>
         </ul>
     </div>
 
     <div class="section">
         <h2 class="section-title">Experience</h2>
         <ul>
-            <li>Programming Contest Take-Off Finalist in 2023 at DIU.</li>
-            <li>Participated in ICPC 2023 DIU.</li>
-            <li>Participated in Unlock the Algorithm (UAT), 2023 DIU.</li>
-            <li>Contributor at ShutterStock, AdobeStock and Freepik.</li>
-            <li>Working on a project named MEDCARE.</li>
+            <li>Programming Contest Take-Off Finalist in 2023 at DIU</li>
+            <li>Participated in ICPC 2023 DIU</li>
+            <li>Participated in Unlock the Algorithm (UAT), 2023 DIU</li>
+            <li>Contributor at ShutterStock, AdobeStock, and Freepik</li>
+            <li>Working on a project named MEDCARE</li>
         </ul>
     </div>
 
